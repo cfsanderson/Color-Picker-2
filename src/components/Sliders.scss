@@ -1,0 +1,75 @@
+input.root {
+  width: calc(80vw);
+
+  &[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+  }
+
+  &[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  &[type=range]:focus {
+    outline: none;
+  }
+
+  &[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.5em;
+    width: 0.75em;
+    border-radius: 0.25em;
+    background: hsla(225, 7%, 79%, 1);
+    cursor: pointer;
+    margin-top: -5.5px;
+    box-shadow: 0.05em 0.05em 0.05em hsla(210, 1%, 50%, 1), 0 0 1px hsla(210, 1%, 50%, 1);
+  }
+
+  &[name=hue]::-webkit-slider-runnable-track {
+    height: 0.5em;
+    cursor: pointer;
+    box-shadow: 0.05em 0.05em 0.15em hsla(210, 1%, 50%, 0.5), 0 0 1px hsla(210, 1%, 50%, 0.5);
+    /*background: hsla(225, 7%, 79%, 1);*/
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    border-radius: 1.3px;
+    border: 0.15px solid #010101;
+  }
+
+  &[name=saturation]::-webkit-slider-runnable-track {
+    height: 0.5em;
+    cursor: pointer;
+    box-shadow: 0.05em 0.05em 0.15em hsla(210, 1%, 50%, 0.5), 0 0 1px hsla(210, 1%, 50%, 0.5);
+    /*background: hsla(225, 7%, 79%, 1);*/
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 1.3px;
+    border: 0.15px solid #010101;
+  }
+
+  &[name=lightness]::-webkit-slider-runnable-track {
+    height: 0.5em;
+    cursor: pointer;
+    box-shadow: 0.05em 0.05em 0.15em hsla(210, 1%, 50%, 0.5), 0 0 1px hsla(210, 1%, 50%, 0.5);
+    /*background: hsla(225, 7%, 79%, 1);*/
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 1.3px;
+    border: 0.15px solid #010101;
+  }
+
+  &[name=alpha]::-webkit-slider-runnable-track {
+    height: 0.5em;
+    cursor: pointer;
+    box-shadow: 0.05em 0.05em 0.15em hsla(210, 1%, 50%, 0.5), 0 0 1px hsla(210, 1%, 50%, 0.5);
+    /*background: hsla(225, 7%, 79%, 1);*/
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 1.3px;
+    border: 0.15px solid #010101;
+  }
+}

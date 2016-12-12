@@ -1,0 +1,63 @@
+@import '../styles/utility';
+
+h1 {
+  font-family: $main-header-font;
+  font-size: 2em;
+}
+
+div {
+  border: solid 1px goldenrod;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $base-font-family;
+
+  h1 {
+    padding: 0.5em;
+    color: hsla(225, 7%, 79%, 1);
+    font-family: $main-header-font;
+    font-size: 3em;
+    font-variant: small-caps;
+  }
+}
+
+figure {
+  height: 20vh;
+  width: 80vw;
+
+  &.swatch {
+    border: solid, 1px, hsla(225, 7%, 79%, 1);
+    background-image: url('http://i.imgur.com/XSUUFYm.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.swatch div {
+  height: calc(20vh);
+}
+
+h2 {
+  display: flex;
+  color: hsla(225, 7%, 79%, 1);
+  font-family: $base-font-family, monospace;
+  font-size: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsla(225, 7%, 79%, 1);
+  border: solid 1px hsla(225, 7%, 79%, 1);
+  padding: 1em;
+  margin-top: 0;
+}
