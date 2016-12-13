@@ -8,10 +8,10 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      hue: 120,
-      saturation: 100,
-      lightness: 50,
-      alpha: 1
+      hue: 3,
+      saturation: 94,
+      lightness: 60,
+      alpha: 100
     }
   }
 
@@ -55,7 +55,7 @@ class App extends Component {
           <li>A<Sliders name='alpha' min={0} max={100} value={this.state.alpha} handleChange={v => this.updateAlpha(v)} /></li>
         </ul>
       </section>
-      <section>
+      {/* <section>
         <button>Reset</button>
         <button>Save</button>
       </section>
